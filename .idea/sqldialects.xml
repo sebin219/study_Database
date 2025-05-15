@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Assignment/May14/01_employees.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Assignment/May14/02_sqldb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Assignment/May14/03_world.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/pmClass/00_계정생성및권한부여.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/01_DML.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/02_SELECT.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/03_ORDER_BY.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/04_WHERE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_Keyword.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/06_GROUP_BY.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
