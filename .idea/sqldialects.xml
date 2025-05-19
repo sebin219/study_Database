@@ -9,6 +9,12 @@
     <file url="file://$PROJECT_DIR$/pmClass/lecture/04_SQL심화/advanced/01_sqldb.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/pmClass/lecture/04_SQL심화/advanced/02_employees.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/pmClass/lecture/04_SQL심화/basic/01_sqldb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/advanced/01_tabletb/01_ddl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/advanced/01_tabletb/02_ddl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/basic/01_tabledb/01_ddl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/basic/01_tabledb/02_dml.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/basic/01_tabledb/03_ddl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pmClass/lecture/05_테이블_뷰_테이블스페이스/basic/01_tabledb/04_create_view.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
