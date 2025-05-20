@@ -19,6 +19,8 @@ VALUES
 ('carrot', 'E007', 'Y', '고명석', 'gold'),
 ('orange', 'E004', 'N', '김용욱', 'silver');
 
+SELECT * FROM total_table;
+
 -- 삽입이상(NULL많이 생김)
 INSERT INTO TOTAL_TABLE (고객아이디, 이벤트번호, 당첨여부, 고객이름, 등급)
 VALUES ('melon', NULL, NULL, '성원용', 'gold');
@@ -27,7 +29,7 @@ SELECT * FROM TOTAL_TABLE;
 
 -- 갱신이상(정보불일치 현상 생김)
 UPDATE TOTAL_TABLE
-SET 등급 = 'gold'
+SET 등급 = 'vip'
 WHERE 고객아이디 = 'apple'
   AND 이벤트번호 = 'E010';
 
