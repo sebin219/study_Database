@@ -1,0 +1,47 @@
+<!--
+    Logback은 자바에서 널리 사용되는 로깅(Logging) 프레임워크
+    즉, 애플리케이션 실행 중에 발생하는 다양한 메시지(정보, 경고, 에러 등)를
+    기록하고 출력하는 도구
+    SLF4J(Simple Logging Facade for Java)의 공식 구현체
+-->
+<configuration>
+    <!--
+    ConsoleAppender
+    - 로그를 콘솔(터미널)에 출력하는 Appender
+    -->
+    <appender name="CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <!-- 로그 출력 형식을 지정하는 encoder -->
+        <encoder>
+            <pattern>
+                <!--
+                로그 출력 패턴 설명:
+                %-4relative : 시작 후 경과 시간 (밀리초, 4자리 고정)
+                [%thread]   : 로그를 출력한 스레드 이름
+                %-5level    : 로그 레벨 (INFO, DEBUG 등, 5자리 정렬)
+                %logger{30} : 로거 이름 (최대 30자)
+                %msg        : 실제 로그 메시지
+                %n          : 줄바꿈
+                -->
+                %-4relative [%thread] %-5level %logger{30} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!--
+    특정 패키지(org.mongodb.driver.connection)의 로그 레벨 설정
+    - INFO 이상만 출력됨
+    - additivity="true": 이 로거의 로그가 부모(root)에도 전달됨
+    -->
+    <logger name="org.mongodb.driver.connection" level="INFO" additivity="true"/>
+
+    <!--
+    root 로거 설정
+    - 전체 애플리케이션의 기본 로그 레벨은 INFO
+    - 로그를 "CONSOLE"로 출력하겠다.
+    -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>

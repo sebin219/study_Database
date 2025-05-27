@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.scoula'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 자바 기본 코드할 때 필요한 라이브러리 설정
+    // 몽고 db 드라이버 필요
+    // log 필요
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'org.mongodb:mongodb-driver-sync:5.0.0'
+
+    // 롬복 필요(추가)
+    compileOnly("org.projectlombok:lombok:1.18.32")
+    annotationProcessor("org.projectlombok:lombok:1.18.32")
+
+    testCompileOnly("org.projectlombok:lombok:1.18.32")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.32")
+    // 테스트 코드할 때 필요한 라이브러리 설정
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+}
+
+test {
+    useJUnitPlatform()
+}
