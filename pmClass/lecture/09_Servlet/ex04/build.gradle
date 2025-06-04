@@ -24,9 +24,6 @@ tasks.withType(JavaCompile) {
 dependencies {
     compileOnly('javax.servlet:javax.servlet-api:4.0.1')
 
-    implementation 'javax.servlet:jstl:1.2' //c, fmt태그 추가하기 위한 것!
-    compileOnly 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3' // JSP API
-
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
